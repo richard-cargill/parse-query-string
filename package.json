@@ -1,9 +1,9 @@
 {
-  "name": "base-lib",
-  "version": "1.0.0",
-  "main": "dist/lib.cjs.js",
-  "module": "dist/lib.esm.js",
-  "browser": "dist/lib.umd.js",
+  "name": "parse-query-string",
+  "version": "1.0.1",
+  "main": "dist/parse-query-string.cjs.js",
+  "module": "dist/parse-query.string.esm.js",
+  "browser": "dist/parse-query.string.umd.js",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
