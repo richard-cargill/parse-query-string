@@ -1,0 +1,41 @@
+{
+  "name": "base-lib",
+  "version": "1.0.0",
+  "main": "dist/lib.cjs.js",
+  "module": "dist/lib.esm.js",
+  "browser": "dist/lib.umd.js",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "ava": "^1.0.1",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.0.0",
+    "rollup-plugin-babel": "^4.2.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "xo": "^0.23.0"
+  },
+  "ava": {
+    "sources": [
+      "dist/*"
+    ]
+  },
+  "xo": {
+    "space": true,
+    "ignores": [
+      "rollup.config.js"
+    ]
+  },
+  "scripts": {
+    "lint": "xo --fix",
+    "build": "rollup -c",
+    "watch:test": "ava --watch",
+    "watch:build": "rollup -c -w",
+    "dev": "npm-run-all --parallel watch:*",
+    "pretest": "npm run build && xo",
+    "test": "ava"
+  },
+  "files": [
+    "dist"
+  ]
+}
