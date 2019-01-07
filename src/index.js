@@ -29,14 +29,10 @@ function _keyValueToObj(keyValueString, obj) {
 function parse(input) {
   const strippedInput = _stripQueryIndicator(input);
 
-  const parsedObj = strippedInput
+  return strippedInput
     .split('&')
-    .reduce((accu, curr) => {
-      accu = _keyValueToObj(curr, accu);
-      return accu;
-    }, Object.create(null));
-
-  return parsedObj;
+    .reduce((accu, curr) =>
+      _keyValueToObj(curr, accu), Object.create(null));
 }
 
 export {
