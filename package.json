@@ -29,7 +29,7 @@
   "scripts": {
     "lint": "xo --fix",
     "build": "rollup -c",
-    "watch:test": "ava --watch",
+    "watch:test": "ava --watch --verbose",
     "watch:build": "rollup -c -w",
     "dev": "npm-run-all --parallel watch:*",
     "pretest": "npm run build && xo",
