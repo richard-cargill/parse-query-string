@@ -25,7 +25,7 @@ const parsedWithSameKeys = parse('?key=value 1&key=value 2&key=value 3');
 // {key: ['value 1', 'value 2', 'value 3']}
 ```
 
-The only method currently available is parse. Keys and values are automatically decoded.
+The only method currently available is `parse`. Keys and values are automatically decoded.
 
 ## License
 
