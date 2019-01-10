@@ -2,7 +2,6 @@
 
 Small lib for parsing query strings into objects. 
 
-## Tests passing
 [![Build Status](https://travis-ci.com/richard-cargill/parse-query-string.svg?branch=master)](https://travis-ci.com/richard-cargill/parse-query-string)
 
 ## Install
