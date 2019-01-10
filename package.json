@@ -1,6 +1,6 @@
 {
   "name": "parse-query-string",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/parse-query-string.cjs.js",
   "module": "dist/parse-query.string.esm.js",
   "browser": "dist/parse-query.string.umd.js",
