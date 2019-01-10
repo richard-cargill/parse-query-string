@@ -2,8 +2,6 @@
 
 Small lib for parsing query strings into objects. 
 
-For building other libs
-
 ## Install
 
 ``` 
